@@ -1,0 +1,7 @@
+include /blocks/person/person
+include /blocks/socials/socials
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+person('dsf', 'Дмитриевский Сергей Владимирович', 'dmitrievskiy-serega@yandex.ru')
+		+socials
