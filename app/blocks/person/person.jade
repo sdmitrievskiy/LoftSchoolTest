@@ -2,6 +2,8 @@ mixin person(imageSrc, name, email)
 	// person
 	+b.person&attributes(attributes)
 		+e('img').image(src=imageSrc)
-		+e('p').name= name
-		+e('a').email(href= 'mailto:'+email)= email
+
+		div
+			+e('p').name= name
+			+e('a').email(href= 'mailto:'+email)= email
 	// end person
