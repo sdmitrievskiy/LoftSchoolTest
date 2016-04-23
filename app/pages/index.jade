@@ -13,6 +13,8 @@ block head
 
 block content
 
+	-var courses = getData('courses');
+
 	+wrapper
 		+header
 
@@ -21,6 +23,6 @@ block content
 			+about('imageSrc', 'Мой опыт в разработке', 'sdfjlsflsdflsdfsjdf;sdfksdfsdf')
 
 		+section('image', 'Курсы на loftblog', 'которые помогут мне в выполнении этого задания')
-			+courses
+			+courses(courses)
 
 		+footer('А это футер с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна')

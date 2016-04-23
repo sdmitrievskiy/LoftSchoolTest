@@ -1,8 +1,8 @@
 include /blocks/course/course
 
-mixin courses()
+mixin courses(courses)
 	// start courses
 	+b.courses&attributes(attributes)
-		+course
-		+course
+		each course in courses
+			+course(course.image,course.title, course.description, course.duration)
 	// end courses
