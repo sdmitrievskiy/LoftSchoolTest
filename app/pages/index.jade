@@ -3,6 +3,7 @@ include  /blocks/header/header
 include /blocks/section/section
 include /blocks/footer/footer
 include /blocks/about/about
+include /blocks/courses/courses
 
 extends /blocks/layout-default/layout-default
 
@@ -20,5 +21,6 @@ block content
 			+about('imageSrc', 'Мой опыт в разработке', 'sdfjlsflsdflsdfsjdf;sdfksdfsdf')
 
 		+section('image', 'Курсы на loftblog', 'которые помогут мне в выполнении этого задания')
+			+courses
 
 		+footer('А это футер с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна')

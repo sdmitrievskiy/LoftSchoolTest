@@ -1,0 +1,9 @@
+mixin course(imageSrc, title, description, duration)
+	+b.course&attributes(attributes)
+		+e('img').image(src=imageSrc)
+		+e('h4').title= title
+		+e('p').description= description
+		+e('p').duration= duration
+
+		+e('input').checkbox(type='checkbox')
+		+e('label').checkbox-label Посмотрел
