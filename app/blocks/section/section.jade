@@ -1,0 +1,9 @@
+mixin section(style, headline, subtext)
+	// start section
+	+b('section').section&attributes(attributes)
+		+e('h2').headline= headline
+		+e('p').subtext= subtext
+
+		block
+	// end section
+

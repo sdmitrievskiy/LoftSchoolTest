@@ -1,5 +1,7 @@
 include  /blocks/wrapper/wrapper
 include  /blocks/header/header
+include /blocks/section/section
+include /blocks/footer/footer
 
 extends /blocks/layout-default/layout-default
 
@@ -11,4 +13,8 @@ block content
 
 	+wrapper
 		+header
+		+section('white', 'О будущем ученике', 'Ребятам из лофт блог будет полезно узнать обо мне')
 
+		+section('image', 'Курсы на loftblog', 'которые помогут мне в выполнении этого задания')
+
+		+footer('А это футер с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна')
