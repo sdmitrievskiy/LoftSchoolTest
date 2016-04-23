@@ -1,7 +1,7 @@
-mixin course(imageSrc, title, description, duration)
+mixin course(imageSrc, title, description, duration, href)
 	+b.course&attributes(attributes)
-		+e('img').image(src=imageSrc)
-		+e('h4').title= title
+		+e('img').image(src= imageSrc)
+		+e('a').link(href=href, target="_blank")= title
 		+e('p').description= description
 		+e('p').duration= duration
 

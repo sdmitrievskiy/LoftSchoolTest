@@ -4,5 +4,5 @@ mixin courses(courses)
 	// start courses
 	+b.courses&attributes(attributes)
 		each course in courses
-			+course(course.image,course.title, course.description, course.duration)
+			+course(course.image,course.title, course.description, course.duration,course.href)
 	// end courses
