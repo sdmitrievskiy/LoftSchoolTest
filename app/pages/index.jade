@@ -2,6 +2,7 @@ include  /blocks/wrapper/wrapper
 include  /blocks/header/header
 include /blocks/section/section
 include /blocks/footer/footer
+include /blocks/about/about
 
 extends /blocks/layout-default/layout-default
 
@@ -13,7 +14,10 @@ block content
 
 	+wrapper
 		+header
+
 		+section('white', 'О будущем ученике', 'Ребятам из лофт блог будет полезно узнать обо мне')
+			+about('imageSrc', 'Немного обо мне', 'lorem sdlfjsdlfkjsdlfjsdlfslkdfjllsdf')
+			+about('imageSrc', 'Мой опыт в разработке', 'sdfjlsflsdflsdfsjdf;sdfksdfsdf')
 
 		+section('image', 'Курсы на loftblog', 'которые помогут мне в выполнении этого задания')
 

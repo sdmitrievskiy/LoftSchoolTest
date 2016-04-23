@@ -1,0 +1,7 @@
+mixin about(imageSrc, headline, subtext)
+	// about start
+	+b.about&attributes(attributes)
+		+e('img').image(src=imageSrc)
+		+e('h3').headline= headline
+		+e('p').subtext= subtext
+	//about end
