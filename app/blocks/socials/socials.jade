@@ -1,7 +1,10 @@
-mixin socials()
+include /blocks/icon/icon
+
+mixin socials(socials)
 	// socials
 	+b.socials&attributes(attributes)
-		+e('a').link_skype(href='skype')
-		+e('a').link_github(href='github')
-		+e('a').link_vk(href='vk')
+		each social in socials
+			+e('a').link(href=social.href)
+				+icon(social.name)
+
 	// end socials

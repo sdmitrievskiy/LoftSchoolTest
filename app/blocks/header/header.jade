@@ -3,9 +3,11 @@ include /blocks/socials/socials
 include /blocks/wrapper/wrapper
 
 mixin header()
+
+	-var socials = getData('socials');
 	// header
 	+b('header').header&attributes(attributes)
 		+wrapper
 			+person('assets/images/avatar.png', 'Дмитриевский Сергей Владимирович', 'dmitrievskiy-serega@yandex.ru')
-			+socials
+			+socials(socials)
 	// end header
