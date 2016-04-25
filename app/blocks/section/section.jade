@@ -1,9 +1,17 @@
+include /blocks/wrapper/wrapper
+
 mixin section(style, headline, subtext)
 	// start section
-	+b('section').section&attributes(attributes)
-		+e('h2').headline= headline
-		+e('p').subtext= subtext
+	if style == 'bg'
+		+b('section').section_bg&attributes(attributes)
+			+e('h2').headline= headline
+			+e('p').subtext= subtext
+			block
 
-		block
+	else if style == 'white'
+		+b('section').section&attributes(attributes)
+			+e('h2').headline= headline
+			+e('p').subtext= subtext
+			block
 	// end section
 
