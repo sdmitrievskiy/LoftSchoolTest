@@ -4,7 +4,7 @@
 
 $(document).ready(function () {
 
-	let courseCount = 1;
+	let courseCount = 6;
 	// курсов у нас много, поэтому нужно дополнительно реализовать
 	// поведение label
 	// реализуем поведение только в одну строну, ТЗ не требует обратного
@@ -24,12 +24,13 @@ $(document).ready(function () {
 
 				const section = course.closest('.section');
 
-				section.children('.section__headline').fadeOut();
-				section.closest('.section').children('.section__subtext').fadeOut();
+				section.children('.section__headline').remove();
+				section.closest('.section').children('.section__subtext').remove();
 
 				section.addClass('section_complete');
 				section.height( section.offset().top );
 				$('.courses').html('<p class=\'complete\'>Задание выполнено</p>');
+				$('.complete').fadeIn('slow');
 
 				console.log( section.offset() );
 
