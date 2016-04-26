@@ -3,42 +3,42 @@
 	"title": "Основы JavaScript",
 	"description": "Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот замечательных язык от самых основ",
 	"duration": "24 урока (6 часов 45 минут)",
-	"image": "javascript.jpg",
+	"image": "assets/images/js.jpg",
 	"href":  "http://www.youtube.com/watch?v=n0sPFaLsNeI&list=PLR4ngZFqtz4ehq4pNL5jgVzxKfqQNg6hx"
   },
   {
 	"title": "Основы Jquery",
 	"description": "Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот замечательных язык от самых основ",
 	"duration": "11 уроков (2 часа 6 минут)",
-	"image": "jquery.jpg",
+	"image": "assets/images/jquery.jpg",
 	"href": "http://www.youtube.com/watch?v=rxqcWvcObFE&list=PLY4rE9dstrJxST3xftg5kSCQdUB8hvj4S"
   },
   {
 	"title": "Базовые элементы страниц",
 	"description": "Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот замечательных язык от самых основ",
 	"duration": "9 уроков (2 часа 7 минут)",
-	"image": "base.jpg",
+	"image": "assets/images/base.jpg",
 	"href": "http://www.youtube.com/watch?v=d2f-tPL6HXQ&list=PLY4rE9dstrJz25gq63HjXIOPg0ailynCN"
   },
   {
 	"title": "Создание адаптивных сайтов",
 	"description": "В этом курсе вы узнаете, как создавать адаптивные сайты, что такое адаптивная верстка и дизайн",
 	"duration": "7 уроков (2 часа 11 минут)",
-	"image": "adaptive.jpg",
+	"image": "assets/images/adaptive1.jpg",
 	"href": "http://www.youtube.com/watch?v=Au6d1d-vFjU&list=PLY4rE9dstrJyJEghRkl7qfqdAdlyvaOVQ"
   },
   {
 	"title": "Верстка адаптивной css галереи",
 	"description": "В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно",
 	"duration": "6 уроков (1 час 9 минут)",
-	"image": "css-gallery1.jpg",
+	"image": "assets/images/adaptive2.jpg",
 	"href": "#"
   },
   {
 	"title": "Верстка адаптивной css галереи",
 	"description": "В этом уроке мы разберем, как верстать адаптивную css галерею. Также познакомимся с flexbox.",
 	"duration": "4 урока (50 минут)",
-	"image": "css-gallery2.jpg",
+	"image": "assets/images/adaptive3.jpg",
 	"href": "#"
   }
 ]

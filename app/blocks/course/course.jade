@@ -1,9 +1,17 @@
 mixin course(imageSrc, title, description, duration, href)
 	+b.course&attributes(attributes)
-		+e('img').image(src= imageSrc)
-		+e('a').link(href=href, target="_blank")= title
-		+e('p').description= description
-		+e('p').duration= duration
 
-		+e('input').checkbox(type='checkbox')
-		+e('label').checkbox-label Посмотрел
+		a(href= href)
+			+e('img').image(src= imageSrc)
+
+			.text
+				+e('h4').title= title
+				+e('p').description= description
+				+e('p').duration
+					i.fa.fa-clock-o
+					|
+					= duration
+
+		.form
+			+e('input').checkbox(type='checkbox')
+			+e('label').checkbox-label Посмотрел
