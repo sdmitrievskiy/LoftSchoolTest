@@ -1,14 +1,44 @@
 // import svg4everybody from 'svg4everybody';
  import $ from 'jquery';
 
-console.log(3);
+
 $(document).ready(function () {
-	console.log(1);
-	//курсов у нас много, поэтому нужно дополнительно реализовать
-	//поведение label
-	//реализуем поведение только в одну строну, ТЗ не требует обратного
+
+	let courseCount = 1;
+	// курсов у нас много, поэтому нужно дополнительно реализовать
+	// поведение label
+	// реализуем поведение только в одну строну, ТЗ не требует обратного
+
 	$('.course__checkbox-label').click(function () {
+		const course = $(this).parent('.form').parent('.course');
+
 		$(this).siblings('.course__checkbox').attr('checked', 'checked');
+
+		course.addClass('course_checked');
+
+		setTimeout(function () {
+			course.fadeOut();
+			courseCount -= 1;
+			console.log(courseCount);
+			if ( courseCount === 0 ) {
+
+				const section = course.closest('.section');
+
+				section.children('.section__headline').fadeOut();
+				section.closest('.section').children('.section__subtext').fadeOut();
+
+				section.addClass('section_complete');
+				section.height( section.offset().top );
+				$('.courses').html('<p class=\'complete\'>Задание выполнено</p>');
+
+				console.log( section.offset() );
+
+			}
+
+		}, 1000);
+
+
 	});
+
 
 });
