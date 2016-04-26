@@ -1,10 +1,13 @@
 .course
-	display block
+	display inline-block
 	width 300px
 	box-shadow 0 1px 5px rgba(0, 0, 0, 0.2)
 	border-radius 1px
-	margin-bottom 70px
 	background white
+	height 100%
+
+	&:nth-child(even)
+		margin 0 20px
 
 	a
 		text-decoration none
@@ -12,6 +15,7 @@
 	.text
 		padding 20px
 		text-align left
+		position relative
 
 	&__title
 		font-size $textSizeL
@@ -38,6 +42,7 @@
 
 	.fa-clock-o:before
 		content "\f017"
+		margin-right 5px
 
 
 	.form
@@ -76,6 +81,17 @@
 			size 20px
 			margin-right 20px
 
+	&:hover &__title
+		color $textColorGreen
+
+	&:hover .text:before
+		content ''
+		display block
+		size 300px 5px
+		background-color $textColorGreen
+		position absolute
+		top -8px
+		left 0
 
 
 

@@ -1,8 +1,25 @@
 include /blocks/course/course
+include /blocks/wrapper/wrapper
 
 mixin courses(courses)
 	// start courses
-	+b.courses&attributes(attributes)
-		each course in courses
-			+course(course.image,course.title, course.description, course.duration,course.href)
+	-var coursesCount = courses.length
+	-var counter = 0
+	-var course = null
+	-var courseIndex = null
+	+wrapper
+		+b.courses&attributes(attributes)
+			while counter < coursesCount
+
+				-var counterInner = 0
+				.row
+					while counterInner < 3
+						- courseIndex = counter + counterInner
+						if courses[courseIndex]
+							+course(courses[courseIndex].image, courses[courseIndex].title, courses[courseIndex].description, courses[courseIndex].duration,courses[courseIndex].href)
+
+						- counterInner++
+
+				- counter += 3
+
 	// end courses
