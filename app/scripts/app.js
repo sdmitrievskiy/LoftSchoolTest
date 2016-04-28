@@ -1,23 +1,23 @@
-// import svg4everybody from 'svg4everybody';
- import $ from 'jquery';
+import $ from 'jquery';
 
-
+// Немножко JS и jQuery
 $(document).ready(function () {
 
 	let courseCount = 6;
-	// курсов у нас много, поэтому нужно дополнительно реализовать
-	// поведение label
-	// реализуем поведение только в одну строну, ТЗ не требует обратного
 
+	// Так как чекбоксы стилизованы через label, то ловим нажатие на label
 	$('.course__checkbox-label').click(function () {
 		const course = $(this).parent('.form').parent('.course');
 
 		course.addClass('course_checked');
 
+		// Через секунду после нажатия на чекбос скрываем его
+		// Если курсов больше не осталось, появляется надпись
 		setTimeout(function () {
+
 			course.fadeOut();
 			courseCount -= 1;
-			console.log(courseCount);
+
 			if ( courseCount === 0 ) {
 
 				const section = course.closest('.section');
@@ -30,14 +30,10 @@ $(document).ready(function () {
 				$('.courses').html('<p class=\'complete\'>Задание выполнено</p>');
 				$('.complete').fadeIn('slow');
 
-				console.log( section.offset() );
-
 			}
 
 		}, 1000);
 
-
 	});
-
 
 });
