@@ -12,15 +12,16 @@ block head
 	- var pageTitle = 'dsfdfdfdfCSSSR Project Tedfmplate';
 
 block content
-
-	-var courses = getData('courses');
+	
+	- var info = getData('info');
+	- var courses = getData('courses');
 
 	+header
 
-	+section('white', 'О будущем ученике', 'Ребятам из лофт блог будет полезно узнать обо мне')
+	+section('white', 'О будущем ученике', 'Ребятам из LoftSchool будет полезно узнать обо мне')
 		.row
-			+about('hello', 'Немного обо мне', 'lorem sdlfjsd lfkjsdl fjsdl fslkd fjll sdsd fdfd fsdi fhksd jgka hslgjas flkgja fdlkgjl afdjgkld fjglkjd flgjfd lkgjf dlgjf')
-			+about('experience', 'Мой опыт в разработке', 'sdfjlsflsdflsdfsjdf;sdfksdfsdf')
+			+about('hello', info.hello.title, info.hello.text)
+			+about('experience', info.experience.title, info.experience.title)
 
 	+section('bg', 'Курсы на loftblog', 'которые помогут мне в выполнении этого задания')
 		+courses(courses)
