@@ -12,7 +12,8 @@ block head
 	- var pageTitle = 'dsfdfdfdfCSSSR Project Tedfmplate';
 
 block content
-	
+
+	//получаем данные из json
 	- var info = getData('info');
 	- var courses = getData('courses');
 
@@ -21,7 +22,7 @@ block content
 	+section('white', 'О будущем ученике', 'Ребятам из LoftSchool будет полезно узнать обо мне')
 		.row
 			+about('hello', info.hello.title, info.hello.text)
-			+about('experience', info.experience.title, info.experience.title)
+			+about('experience', info.experience.title, info.experience.text)
 
 	+section('bg', 'Курсы на loftblog', 'которые помогут мне в выполнении этого задания')
 		+courses(courses)
