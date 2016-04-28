@@ -1,4 +1,4 @@
-mixin course(imageSrc, title, description, duration, href)
+mixin course(imageSrc, title, description, duration, href, id)
 	+b.course&attributes(attributes)
 
 		a(href= href)
@@ -12,5 +12,5 @@ mixin course(imageSrc, title, description, duration, href)
 					= duration
 
 		.form
-			+e('input').checkbox(type='checkbox')
-			+e('label').checkbox-label Посмотрел
+			+e('input').checkbox(type='checkbox', name= id, id= id)
+			+e('label').checkbox-label(for= id) Посмотрел

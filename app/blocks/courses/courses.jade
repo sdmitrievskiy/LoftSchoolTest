@@ -16,7 +16,7 @@ mixin courses(courses)
 					while counterInner < 3
 						- courseIndex = counter + counterInner
 						if courses[courseIndex]
-							+course(courses[courseIndex].image, courses[courseIndex].title, courses[courseIndex].description, courses[courseIndex].duration,courses[courseIndex].href)
+							+course(courses[courseIndex].image, courses[courseIndex].title, courses[courseIndex].description, courses[courseIndex].duration,courses[courseIndex].href, courses[courseIndex].id )
 
 						- counterInner++
 

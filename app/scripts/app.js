@@ -12,8 +12,6 @@ $(document).ready(function () {
 	$('.course__checkbox-label').click(function () {
 		const course = $(this).parent('.form').parent('.course');
 
-		$(this).siblings('.course__checkbox').attr('checked', 'checked');
-
 		course.addClass('course_checked');
 
 		setTimeout(function () {
