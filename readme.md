@@ -1,6 +1,6 @@
 # Тестовое задание для LoftSchool
 **Для разработки использовался стартовый шаблон CSSSR**
-
+## Результат: (http://thedolphin2713.github.io/LoftSchoolTest/)
 
 ## Старт проекта
 
