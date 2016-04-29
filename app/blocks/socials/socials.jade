@@ -4,7 +4,7 @@ mixin socials(socials)
 	// socials
 	+b.socials&attributes(attributes)
 		each social in socials
-			+e('a').link(href=social.href)
+			+e('a').link(href=social.href, target="_blank")
 				+icon(social.name)
 
 	// end socials
