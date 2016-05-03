@@ -7,8 +7,17 @@ import('helpers/svg-size')
 
 import('../blocks/**/*')
 
+html
+	height 100%
+
 body
 	font-family FiraSans-Regular
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+main
+	flex: 1 0 auto
 
 .row
 	display flex
