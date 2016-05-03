@@ -9,17 +9,8 @@ mixin courses(courses)
 	-var courseIndex = null
 	+wrapper
 		+b.courses&attributes(attributes)
-			while counter < coursesCount
 
-				-var counterInner = 0
-				.row
-					while counterInner < 3
-						- courseIndex = counter + counterInner
-						if courses[courseIndex]
-							+course(courses[courseIndex].image, courses[courseIndex].title, courses[courseIndex].description, courses[courseIndex].duration,courses[courseIndex].href, courses[courseIndex].id )
-
-						- counterInner++
-
-				- counter += 3
+			each course in courses
+				+course(course.image, course.title, course.description, course.duration,course.href, course.id )
 
 	// end courses

@@ -26,7 +26,7 @@ $(document).ready(function () {
 				section.closest('.section').children('.section__subtext').remove();
 
 				section.addClass('section_complete');
-				section.height( section.offset().top );
+				section.height( section.offset().top);
 				$('.courses').html('<p class=\'complete\'>Задание выполнено</p>');
 				$('.complete').fadeIn('slow');
 
